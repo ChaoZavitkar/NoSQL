@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+
+{% block subtitle %}
+Datasets
+{% endblock %}
+
+{% block main %}
+<h2>Datasets</h2>
+<ul>
+    {% for recept in receptar %}
+    <li>
+        <dd>Název: {{ recept["název"] }}</dd>
+        <dt>Postup: {{ recept["postup"] }}</dt>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

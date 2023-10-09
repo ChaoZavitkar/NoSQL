@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+
+{% block subtitle %}
+Contact
+{% endblock %}
+
+{% block main %}
+<h2>Contact</h2>
+<form action="contact" method="post">
+    <fieldset>
+        <label for="nazev">Název:</label>
+        <input type="text" name="nazev" placeholder="Zadej název receptu" required>
+        <label for="postup">Postup:</label>
+        <input type="text" name="postup" placeholder="Zadej postup receptu" required>
+    </fieldset>
+    <button type="submit">Send message</button>
+</form>
+{% endblock %}
